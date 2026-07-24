@@ -1,6 +1,6 @@
 from fastapi import FastAPI,status,HTTPException
 
-from schemas import Task
+from schemas import Task,TaskRequest
 
 
 tasks=[
@@ -25,9 +25,8 @@ def health():
 
 
 @app.get("/tasks", 
-    response_model=list[Task]
 )
-def get_all_tasks()->list[Task]:
+def get_all_tasks():
     return tasks
 
 @app.get("/tasks/{id}")
@@ -55,3 +54,16 @@ def get_task_by_id(id:int)->Task:
 
     )
     return required_task_obj
+
+
+@app.post("/tasks")
+def post_tasks(task:TaskRequest):
+    if task is None or len(task.title)<3:
+        raise HTTPException(
+            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+            detail="Invalid task"
+        )
+
+    tasks.append({"id": len(tasks) ,"title":task.title, "completed" : False})
+
+    return task
