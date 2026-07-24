@@ -67,3 +67,50 @@ def post_tasks(task:TaskRequest):
     tasks.append({"id": len(tasks) ,"title":task.title, "completed" : False})
 
     return task
+
+
+@app.put("/tasks/{id}")
+def edit_task(id:int,rtask:dict):
+
+    if rtask is None:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="invalid request"
+        )
+    req_task =None
+
+    for task in tasks:
+        if task["id"]==id:
+            if rtask.title :
+                task["title"]=rtask["title"]
+            task["done"]=rtask["done"]
+            req_task=task
+            break
+
+    if req_task is None:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="invalid task id"
+        )
+
+    return req_task
+
+
+@app.delete("/tasks/{id}")
+def delete_task(id:int):
+
+    req_task=None
+
+    for task in tasks:
+        if task["id"]==id:
+            req_task=task["id"]
+            break
+
+    if req_task is None:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="task with given id not found"
+        )
+
+    tasks.remove(req_task)
+    return {"status":"ok"}
