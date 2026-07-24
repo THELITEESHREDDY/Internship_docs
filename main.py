@@ -4,8 +4,8 @@ from schemas import Task,TaskRequest
 
 
 tasks=[
-    {"id":101,"title":"lala", "done":False},
-    {"id":102, "title": "cheyale", "done":True}
+    {"id":101,"title":"lala", "done":"False"},
+    {"id":102, "title": "cheyale", "done":"True"}
 ]
 app = FastAPI()
 
@@ -81,7 +81,7 @@ def edit_task(id:int,rtask:dict):
 
     for task in tasks:
         if task["id"]==id:
-            if rtask.title :
+            if rtask["title"] is not None :
                 task["title"]=rtask["title"]
             task["done"]=rtask["done"]
             req_task=task
@@ -103,7 +103,7 @@ def delete_task(id:int):
 
     for task in tasks:
         if task["id"]==id:
-            req_task=task["id"]
+            req_task=task
             break
 
     if req_task is None:
