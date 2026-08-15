@@ -1,0 +1,192 @@
+ Proof Statement
+
+I build backend systems for autonomous AI agents with reliability and operability as first-class requirements. I focus on the engineering behind agents that must work beyond the happy path: orchestration, tool execution, durable state, failure recovery, concurrency, and observability. My portfolio proves that I can take an agentic system, understand how it behaves, trace failures to their root causes, and engineer the system to remain understandable and recoverable when things go wrong. I’m building this portfolio for an AI startup CTO shipping an agentic product to real users who needs an engineer capable of owning the backend problems behind autonomous systems. The goal is simple: when they see my work, they should want to contact me about an engineering role.
+
+
+2. The One Action
+
+Get the AI startup CTO to contact me about an engineering role.
+
+Not:
+ “View my GitHub”
+ “Download my resume”
+ “Connect with me”
+ “Book a call”
+ “Try my projects”
+
+Those can exist as supporting links, but they aren't the primary conversion.
+  One primary visitor action
+  One primary CTA leading to that action
+  Contact method that makes the action frictionless
+  Supporting links don't compete visually with the primary action
+
+
+Success metric
+A qualified AI startup CTO contacts me about an engineering role.
+
+
+
+3. Audience
+
+
+
+An AI startup CTO shipping an agentic product to real users.
+More specifically, the person should be someone who:
+ is technically capable of evaluating my work
+ can influence or make engineering hires
+ is dealing with real AI-agent backend problems
+ cares about reliability and operability
+ can actually bring you into the company
+
+  One specific person/role
+  Their context
+  Their problem
+  What they need from an engineer
+  What evidence would convince them
+
+
+The mental state i'm trying to create
+
+Before seeing your portfolio:
+
+“We need engineers who can handle the messy backend problems around agents.”
+
+After seeing it:
+
+“This person understands exactly those problems. I should talk to him.”
+
+
+
+
+
+4. Sitemap
+
+single-page sitemap:
+LANDING
+ ↓
+PROOF / THE WORK
+  ↓
+HOW I ENGINEER AGENTS
+  ↓
+ABOUT / TRUST
+  ↓
+ACTION / CONTACT
+
+
+Section deliverables
+
+Landing
+
+Must prove:
+
+“I know exactly what I want to be hired for.”
+
+Keep:
+
+ primary claim
+ one-sentence differentiator
+ short supporting statement
+ primary CTA
+Proof / The Work
+
+Must prove:
+“He can actually build this.”
+Keep:
+
+
+
+ 3 strong projects
+
+
+ architecture
+ engineering decisions
+ failure modes
+ recovery mechanisms
+ experiments
+ measurements
+ technical writeups
+The projects should progressively demonstrate:
+Agent orchestration
+       ↓
+Reliability / recovery
+       ↓
+Operability / scale
+
+How I Engineer Agents
+
+Must prove:
+“He has engineering judgment, not just framework knowledge.”
+
+Keep your principles around:
+ observability
+ persistent state
+ failure as a design assumption
+ recovery
+ testing unhappy paths
+ root-cause analysis
+About / Trust
+Must prove:
+
+“There is a thoughtful engineer behind this work.”
+Keep:
+ who you are
+ what you care about
+ how you approach engineering
+ relevant technical foundation
+ concise background
+
+Don't turn this into your entire résumé.
+Action / Contact
+
+Must prove:
+“I know exactly what I should do next.”
+
+Keep:
+ one strong hiring CTA
+ simple contact method
+ GitHub/LinkedIn/email as secondary links
+
+Sitemap deliverables
+  One-page structure finalized
+  Every section has one job
+  Visitor can move naturally from claim → evidence → trust → action
+  No section exists merely because it's conventional for portfolios
+  No competing primary actions
+
+
+
+5. Call to Action (CTA)
+
+Purpose
+The CTA is the actual interface element that converts the visitor into your desired action.
+Your primary CTA should be:
+Contact me about an engineering role →
+You can make it slightly more contextual:
+Talk to me about an engineering role →
+or:
+Build AI systems with me →
+But I'd keep the first one because it directly matches your defined action.
+Where it appears
+You should have the same primary CTA at strategic points:
+Hero
+  ↓
+[See the proof]
+
+Proof
+  ↓
+[Contact me about an engineering role]
+
+Final section
+  ↓
+[Contact me about an engineering role]
+
+The hero can use “See the proof” as a navigation CTA because the visitor hasn't earned the conversion yet.
+The actual conversion CTA remains:
+Contact me about an engineering role.
+Deliverables
+  One primary CTA wording
+  One destination
+  Contact mechanism works
+  CTA appears after sufficient proof
+  CTA is visually dominant over secondary links
+  No competing “primary” CTAs
