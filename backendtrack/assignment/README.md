@@ -107,3 +107,16 @@ SELECT task_table.id, task_table.title, task_table.done
 FROM task_table 
 WHERE lower(task_table.title) LIKE lower('%milk%');
 ```
+
+
+## PostgreSQL with Docker
+
+Start the PostgreSQL database:
+
+```bash
+docker run --name taskdb \
+  -e POSTGRES_PASSWORD=GET_FROM_YOUR_ENV \
+  -e POSTGRES_DB=tasks \
+  -p 5433:5432 \
+  -v taskdata:/var/lib/postgresql \
+  -d postgres
