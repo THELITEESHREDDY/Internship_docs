@@ -120,3 +120,11 @@ docker run --name taskdb \
   -p 5433:5432 \
   -v taskdata:/var/lib/postgresql \
   -d postgres
+```
+
+```bash
+curl -i http://localhost:8000/tasks
+``` returns 200 + rows straight from Postgres. 
+```bash
+curl -i http://localhost:8000/tasks/999 
+``` returns 404 + the error JSON.
