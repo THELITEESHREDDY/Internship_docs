@@ -124,7 +124,20 @@ docker run --name taskdb \
 
 ```bash
 curl -i http://localhost:8000/tasks
-``` returns 200 + rows straight from Postgres. 
+``` 
+returns 200 + rows straight from Postgres. 
 ```bash
 curl -i http://localhost:8000/tasks/999 
-``` returns 404 + the error JSON.
+``` 
+returns 404 + the error JSON.
+
+
+### Checking routes working with postgres container 
+ ▕  127.0.0.1:40400 - "POST /task/create HTTP/1.1" 201  : done
+ ▕  127.0.0.1:48012 - "GET /task/ HTTP/1.1" 200         : done
+ ▕  127.0.0.1:35074 - "GET /task/1 HTTP/1.1" 200        : done
+ ▕  127.0.0.1:50300 - "GET /task/2 HTTP/1.1" 404        : done
+ ▕  127.0.0.1:42460 - "PUT /task/update_task/1 HTTP/1.1" 201 : done
+ ▕  127.0.0.1:32982 - "GET /task/1 HTTP/1.1" 200             : done
+ ▕  127.0.0.1:53742 - "GET /task/ HTTP/1.1" 200              : done
+ ▕  127.0.0.1:46706 - "DELETE /task/delete/1 HTTP/1.1" 204   : done
