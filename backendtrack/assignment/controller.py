@@ -1,8 +1,8 @@
 from fastapi import status,HTTPException
 from sqlalchemy.orm import Session
 from typing import Optional
-from models import Task
-from schemas import TaskResponse,TaskRequest,TaskDB, TaskUpdateRequest
+from assignment.models import Task
+from assignment.schemas import TaskResponse,TaskRequest,TaskDB, TaskUpdateRequest
 from datetime import datetime,timezone
 
 

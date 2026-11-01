@@ -1,9 +1,9 @@
 from fastapi import APIRouter,HTTPException,status,Depends
 from typing import List,Annotated
 from sqlalchemy.orm import Session
-from schemas import TaskDB,TaskRequest,TaskResponse,TaskUpdateRequest
-from db_config import get_db
-import controller
+from assignment.schemas import TaskDB,TaskRequest,TaskResponse,TaskUpdateRequest
+from assignment.db_config import get_db
+import assignment.controller as controller
 
 task_routes = APIRouter(prefix="/task")
 

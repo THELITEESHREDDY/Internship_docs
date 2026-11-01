@@ -1,4 +1,4 @@
-from db_config import Base  # CRITICAL: Inherit from the shared Base instance!
+from assignment.db_config import Base  # CRITICAL: Inherit from the shared Base instance!
 from sqlalchemy import Column, Integer, String, Boolean, DateTime
 from datetime import datetime, timezone
 
